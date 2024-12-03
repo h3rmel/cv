@@ -1,0 +1,25 @@
+@charset 'utf-8';
+
+@import 'shadcn-ui.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply font-sora box-border scroll-smooth;
+  }
+}
+
+@layer components {
+  .section {
+    @apply container mx-auto;
+    @apply px-4 py-8 md:p-16;
+    @apply border-x-0 border-dashed border-border md:border-x;
+  }
+
+  .glow {
+    @apply duration-300 md:hover:border-emerald-500 md:hover:shadow-[0_0_16px_4px_rgba(16,185,129,0.4)];
+  }
+}
